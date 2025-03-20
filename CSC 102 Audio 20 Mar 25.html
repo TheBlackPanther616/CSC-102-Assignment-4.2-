@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSC 102 Audio 20 Mar 25.css">
+    <script src="CSC 102 Audio 20 Mar 25.js"></script>
+    <title>Audio</title>
+</head>
+    <!--Written By Joseph Hudson Jr-->
+<header><h1>Old School Hip Hop</h1></header>
+<body>
+
+    <h1>Audio</h1>
+    <!--Setting up audio controls-->
+    <audio controls>
+        <source src = "Audio/going_back_to_cali.mp3"></source>
+    </audio>
+</body>
+  <!--Setting up second audio controls-->
+    <div class="cassette-player">
+        <div class="cassette-slot">
+            <span class="tape-label">Tape: [LL Cool J] I Can't Live Without My Radio </span>
+        </div>
+        <audio id="audio" src="Audio/going_back_to_cali.mp3"></audio>
+        <div class="controls">
+            <button id ="startAudio" onclick="playCassette()">Play</button>
+            <button id ="pauseAudio" onclick="pauseCassette()">Pause</button>
+            <button id ="pauseAudio" onclick="stopCassette()">Stop</button>
+        </div>
+        <p id="status">Status: Stopped</p>
+    </div>
+    <!--Setting up words for animation-->
+    <div class="equalizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    
+
+<footer>
+    <p> Copyright 2025 JHJ </p>
+    </footer>
+</html>
