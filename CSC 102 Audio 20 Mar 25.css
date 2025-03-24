@@ -1,142 +1,212 @@
+/* General styling for the entire page */
 body 
 {
-   /*Configuration for background and Audio style*/
+    /* Set the background image for the page */
     background-image: url(Current_Assignment_Images/radio-mod-18.jpg);
+    /* Prevent the background image from repeating */
     background-repeat: no-repeat;
+    /* Scale the background image to cover the entire page */
     background-size: 100% 100%;
+    /* Ensure the body occupies at least the full viewport height */
     min-height: 100vh;
+    /* Use Flexbox for layout and align elements */
     display: flex;
+    /* Arrange elements vertically in a column */
     flex-direction: column;
+    /* Center elements horizontally */
     justify-content: center;
+    /* Center elements vertically */
     align-items: center;
+    /* Add a small gap between elements */
     gap: 4px;
-    
-
-
 }
-h1
+
+/* Styling for the main heading */
+h1 
 {
+    /* Set the text color to red */
     color: red;
 }
-/* Container for the equalizer */
-.equalizer {
+
+/* Styling for the equalizer container */
+.equalizer 
+{
+    /* Use Flexbox for layout */
     display: flex;
+    /* Align bars to the bottom of the container */
     align-items: flex-end;
+    /* Center bars horizontally */
     justify-content: center;
+    /* Add space between bars */
     gap: 5px;
+    /* Set the height of the equalizer container */
     height: 100px;
+    /* Set the width of the equalizer container */
     width: 200px;
-  }
-  
-  /* Individual bars of the equalizer */
-  .bar {
-    width: 15px;
-    background: linear-gradient(45deg, #ff5722, #4caf50); /* Orange to Green */
-     animation: bounce 1.2s infinite ease-in-out;
-  }
-  
-  /* Different animation delays for each bar */
-  .bar:nth-child(1) { animation-delay: -1.2s; }
-  .bar:nth-child(2) { animation-delay: -1.0s; }
-  .bar:nth-child(3) { animation-delay: -0.8s; }
-  .bar:nth-child(4) { animation-delay: -0.6s; }
-  .bar:nth-child(5) { animation-delay: -0.4s; }
-  
-  /* Keyframe animation for bouncing bars */
-  @keyframes bounce {
-    0%, 100% { height: 20%; }
-    50% { height: 100%; }
-  }
-header
+}
+
+/* Styling for individual equalizer bars */
+.bar 
 {
-    /* Header configuration */
-    background-color:transparent;
+    /* Set the width of each bar */
+    width: 15px;
+    /* Create a gradient color from orange (#ff5722) to green (#4caf50) */
+    background: linear-gradient(45deg, #ff5722, #4caf50);
+    /* Apply bounce animation to the bars */
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+/* Set different animation delays for each bar to create a staggered effect */
+.bar:nth-child(1) { animation-delay: -1.2s; }
+.bar:nth-child(2) { animation-delay: -1.0s; }
+.bar:nth-child(3) { animation-delay: -0.8s; }
+.bar:nth-child(4) { animation-delay: -0.6s; }
+.bar:nth-child(5) { animation-delay: -0.4s; }
+
+/* Define the keyframe animation for bouncing bars */
+@keyframes bounce {
+    /* Start and end with the bars at 20% height */
+    0%, 100% { height: 20%; }
+    /* Bars reach maximum height at the midpoint of the animation */
+    50% { height: 100%; }
+}
+
+/* Styling for the header section */
+header 
+{
+    /* Make the background transparent */
+    background-color: transparent;
+    /* Center the text horizontally */
     text-align: center;
+    /* Set the font size */
     font-size: 20px;
+    /* Use monospace font for styling */
     font-family: monospace;
+    /* Italicize the text */
     font-style: italic;
+    /* Make the text bold */
     font-weight: bold;
+    /* Set the text color to red */
     color: red;
 }
 
+/* Styling for the cassette player container */
 .cassette-player 
 {
-    /* cassette-player configuration */
+    /* Set the background color to dark gray (#333) */
     background-color: #333;
+    /* Set the text color to white */
     color: white;
+    /* Define the width of the cassette player */
     width: 400px;
+    /* Add padding inside the cassette player */
     padding: 20px;
+    /* Round the corners */
     border-radius: 8px;
+    /* Center the text inside the cassette player */
     text-align: center;
+    /* Add a shadow for visual depth */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.cassette-slot
- {
-    /* cassette-slot configuration */
+/* Styling for the cassette slot */
+.cassette-slot 
+{
+    /* Set the background color to a lighter shade of gray (#444) */
     background-color: #444;
+    /* Add padding inside the slot */
     padding: 10px;
+    /* Round the corners */
     border-radius: 4px;
+    /* Add space below the slot */
     margin-bottom: 20px;
 }
 
+/* Styling for the tape label */
 .tape-label 
 {
-    /* tape-label configuration */
+    /* Make the font bold */
     font-weight: bold;
+    /* Set the font size */
     font-size: 16px;
 }
 
+/* Styling for buttons inside the controls container */
 .controls button 
 {
-    /* controls button configuration */
+    /* Add space between buttons */
     margin: 10px;
+    /* Add padding inside the buttons */
     padding: 10px 20px;
+    /* Remove the default border */
     border: none;
+    /* Round the corners */
     border-radius: 5px;
+    /* Set the font size */
     font-size: 14px;
+    /* Change the cursor to a pointer on hover */
     cursor: pointer;
 }
 
-
+/* Slightly dim the button when hovered over */
 .controls button:hover 
 {
     opacity: 0.9;
 }
 
+/* Styling for the first button (Play) */
 .controls button:nth-child(1) 
 {
+    /* Set the background color to green (#28a745) */
     background-color: #28a745;
+    /* Set the text color to white */
     color: white;
 }
 
+/* Styling for the second button (Pause) */
 .controls button:nth-child(2) 
 {
+    /* Set the background color to yellow (#ffc107) */
     background-color: #ffc107;
+    /* Set the text color to black */
     color: black;
 }
 
+/* Styling for the third button (Stop) */
 .controls button:nth-child(3) 
 {
+    /* Set the background color to red (#dc3545) */
     background-color: #dc3545;
+    /* Set the text color to white */
     color: white;
 }
 
-#status
+/* Styling for the status text */
+#status 
 {
-    /* status configuration */
+    /* Add space above the status text */
     margin-top: 20px;
+    /* Set the font size */
     font-size: 16px;
+    /* Italicize the text */
     font-style: italic;
 }
-p
+
+/* Styling for paragraph text */
+p 
 {
-    /* paragraph configuration */
+    /* Make the background transparent */
     background-color: transparent;
+    /* Center the text horizontally */
     text-align: center;
+    /* Set the font size */
     font-size: 10px;
+    /* Use monospace font for styling */
     font-family: monospace;
+    /* Italicize the text */
     font-style: italic;
+    /* Make the text bold */
     font-weight: bold;
+    /* Set the text color to aquamarine */
     color: aquamarine;
 }

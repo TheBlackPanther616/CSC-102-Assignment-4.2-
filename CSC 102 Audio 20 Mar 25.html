@@ -12,36 +12,54 @@
 <header><h1>Old School Hip Hop</h1></header>
 <body>
 
+    <!-- Adding a main heading for the audio section -->
     <h1>Audio</h1>
-    <!--Setting up audio controls-->
-    <audio controls>
-        <source src = "Audio/going_back_to_cali.mp3"></source>
-    </audio>
-</body>
-  <!--Setting up second audio controls-->
-    <div class="cassette-player">
-        <div class="cassette-slot">
-            <span class="tape-label">Tape: [LL Cool J] I Can't Live Without My Radio </span>
-        </div>
-        <audio id="audio" src="Audio/going_back_to_cali.mp3"></audio>
-        <div class="controls">
-            <button id ="startAudio" onclick="playCassette()">Play</button>
-            <button id ="pauseAudio" onclick="pauseCassette()">Pause</button>
-            <button id ="pauseAudio" onclick="stopCassette()">Stop</button>
-        </div>
-        <p id="status">Status: Stopped</p>
-    </div>
-    <!--Setting up words for animation-->
-    <div class="equalizer">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-    
 
+    <!-- Setting up simple audio controls for playback -->
+    <audio controls>
+        <!-- Specifying the source file for the audio -->
+        <source src="Audio/going_back_to_cali.mp3"></source>
+    </audio>
+
+    <!-- Creating a section for a second set of audio controls with a "cassette player" style -->
+    <div class="cassette-player">
+        <!-- Creating a visual representation of the cassette slot -->
+        <div class="cassette-slot">
+            <!-- Adding a label to display the "cassette" information -->
+            <span class="tape-label">Tape: [LL Cool J] going_back_to_cali</span>
+        </div>
+
+        <!-- Adding an audio element with an ID for script-based controls -->
+        <audio id="audio" src="Audio/going_back_to_cali.mp3"></audio>
+
+        <!-- Adding playback control buttons -->
+        <div class="controls">
+            <!-- Play button, linked to the 'playCassette' function -->
+            <button id="startAudio" onclick="playCassette()">Play</button>
+            <!-- Pause button, linked to the 'pauseCassette' function -->
+            <button id="pauseAudio" onclick="pauseCassette()">Pause</button>
+            <!-- Stop button, linked to the 'stopCassette' function -->
+            <button id="stopAudio" onclick="stopCassette()">Stop</button>
+        </div>
+
+        <!-- Placeholder for displaying the status of the cassette player -->
+        <div id="status">Status: Stopped</div>
+    </div>
+
+    <!-- Creating an equalizer visual effect -->
+    <div class="equalizer">
+        <!-- Adding individual bars to simulate the equalizer animation -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+</body>
+
+<!-- Adding a footer section with copyright information -->
 <footer>
     <p> Copyright 2025 JHJ </p>
-    </footer>
+</footer>
 </html>
